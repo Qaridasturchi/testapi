@@ -46,13 +46,11 @@ def DownloadMusic(UrlList: Union[List[str], str]):
             print(f"Error: Request failed with status code {response.status_code} for URL: {url}")
 
     return audio_urls
-
-
-client_id = '93dfe93f21fb46aaad10947eadfde562'
-client_secret = '36bb6e205ff143c6aeab7c3eb9bafd3a'
-
-client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
-sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
+    client_id = '93dfe93f21fb46aaad10947eadfde562'
+    client_secret = '36bb6e205ff143c6aeab7c3eb9bafd3a'
+    
+    client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
+    sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 def SearchFromSpotify(track_name,limit):
     results = sp.search(q=track_name, type='track', limit=limit)
