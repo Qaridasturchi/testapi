@@ -1,5 +1,15 @@
-from spotipy import *
+from spotipy import Spotify
+from spotipy.oauth2 import SpotifyClientCredentials
 
+def SearchFromSpotify(track_name, limit):
+    # Implement your logic to search for the track on Spotify using Spotipy
+    # Return a list of track URLs
+    pass
+
+def DownloadMusic(track_urls):
+    # Implement your logic to download the music using Spotipy
+    # Return a list of audio URLs with their information
+    pass
 
 def main():
     track_name = input("Enter the track name: ")
@@ -15,5 +25,5 @@ def main():
     for audio_info in audio_urls:
         print(f"Name: {audio_info['name']}, URL: {audio_info['url']}")
 
-if name == "main":
+if __name__ == "__main__":
     main()
