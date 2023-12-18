@@ -13,15 +13,7 @@ def SearchFromSpotify(track_name,limit):
     return track_urls
     
 # Function to download the music
-def DownloadMusic(track_urls):
-    # Implement your logic for downloading the music using the provided track URLs
-    # This could involve interacting with the Spotify API or another service
 
-    # For demonstration purposes, let's assume a simple structure for audio_info
-    audio_urls = [{'name': 'Sample Track 1', 'url': 'http://sample-url-1.com'},
-                  {'name': 'Sample Track 2', 'url': 'http://sample-url-2.com'}]
-
-    return audio_urls
 
 def main():
     track_name = input("Enter the track name: ")
