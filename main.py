@@ -1,4 +1,4 @@
-from spotipy import Spotify
+from spotipy import *
 from spotipy.oauth2 import SpotifyClientCredentials
 
 def SearchFromSpotify(track_name, limit):
